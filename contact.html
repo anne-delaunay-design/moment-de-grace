@@ -135,6 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { 'Accept': 'application/json' }
       });
       if (res.ok) {
+        const card = document.querySelector('.contact-card');
+        card.style.minHeight = card.offsetHeight + 'px';
         form.style.display = 'none';
         document.getElementById('contactSuccess').classList.add('visible');
       } else {
