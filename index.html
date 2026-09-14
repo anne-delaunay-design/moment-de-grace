@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moment de Grâce — Soins énergétiques à distance | Fabienne</title>
+<meta name="description" content="Praticienne holistique, Fabienne vous accompagne avec des soins énergétiques à distance depuis chez vous. Réservez votre séance en ligne, sans déplacement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-group">
+    <span class="logo-badge">✨</span>
+    <span class="logo-text">Moment de Grâce</span>
+  </div>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Prendre rdv</a>
+    <a href="#testimonials">Avis</a>
+    <a href="#footer">Contact</a>
+  </nav>
+  <a href="#booking" class="btn btn-primary">Prendre RDV</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">☰</button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Retrouvez votre sérénité sans quitter le confort de votre maison.</h1>
+      <p class="lead">Parce que se déplacer quand on souffre ou qu'on n'a pas de voiture ne devrait jamais être un obstacle, je diffuse mes soins à distance avec la même efficacité qu'en cabinet.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary">Prendre RDV</a>
+        <a href="#footer" class="btn btn-secondary">Me contacter</a>
+      </div>
+      <div class="hero-security">
+        <span aria-hidden="true">🔒</span>
+        <span>Aucun déplacement requis</span>
+      </div>
+    </div>
+    <div class="hero-image" role="img" aria-label="Ambiance sereine et lumineuse — à remplacer par une photo"></div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num">1.</span>
+        <div><strong>Vous réservez</strong><p>Choisissez votre créneau en quelques clics</p></div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2.</span>
+        <div><strong>Vous réglez</strong><p>Validation 100 % sécurisée en ligne</p></div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3.</span>
+        <div><strong>Je vous appelle</strong><p>Pour faire le point sur vos besoins</p></div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">4.</span>
+        <div><strong>Vous vous détendez</strong><p>Installez-vous et profitez du soin</p></div>
+      </div>
+    </div>
+    <hr>
+    <div class="modalities-row">
+      <span class="modalities-label">SOINS :</span>
+      <span class="modality-badge">Troubles physiques</span>
+      <span class="modality-badge">Troubles psychologiques</span>
+      <span class="modality-badge">Troubles du sommeil</span>
+      <span class="modality-badge">Chocs émotionnels &amp; Traumatismes</span>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-image" role="img" aria-label="Portrait de Fabienne — à remplacer par une photo"></div>
+    <div class="about-content">
+      <p class="eyebrow">votre praticienne</p>
+      <h2>Je suis Fabienne, praticienne holistique</h2>
+      <div class="bio">
+        <p>J'ai créé Moment de Grâce avec une certitude : l'accès au soulagement et au bien-être ne doit jamais dépendre de la possibilité de se déplacer.</p>
+        <p>Vivant moi-même près de la nature, je connais bien la réalité de nos campagnes : déserts médicaux, isolement, routes difficiles quand le corps souffre ou dépendance aux transports. C'est ce qui m'a poussée à spécialiser ma pratique dans les soins énergétiques à distance.</p>
+        <p>J'accompagne les personnes à retrouver leur équilibre et leur sérénité. Mes soins à distance sont tout aussi efficaces qu'une séance en cabinet et vous pouvez rester dans votre environnement habituel, là où vous vous sentez en sécurité.</p>
+      </div>
+      <div class="credentials-row">
+        <div class="credential-block">
+          <strong>une écoute sans jugement</strong>
+          <p>Un espace bienveillant et sécurisant pour déposer vos tensions et vos maux.</p>
+        </div>
+        <div class="credential-block">
+          <strong>100% à votre rythme</strong>
+          <p>Des séances pensées pour s'adapter à votre quotidien, sans le stress des transports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <p class="eyebrow">ce que je propose</p>
+      <h2>Rapprocher les cœurs et soulager les corps</h2>
+      <p class="section-subtitle">Mon intention pour chaque soin ? Que vous puissiez fermer les yeux chez vous et vous réveiller plus léger·e, libéré·e de vos tensions et de vos douleurs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-top">
+          <div class="card-tag-row">
+            <img src="images/icone-sparkles.png" alt="" aria-hidden="true" class="card-icon">
+            <span class="tag-pill">Nouveau client</span>
+          </div>
+          <h3>Première rencontre + Soin énergétique</h3>
+          <p class="price">75 Mins • 60€</p>
+          <p class="desc">Une séance d'introduction pour recueillir votre demande et vos besoins. Nous échangeons, j'écoute, puis je dispense le soin à distance.</p>
+        </div>
+        <a href="#booking" class="btn btn-primary btn-block" data-cal="30min">Choisir ce soin</a>
+      </div>
+      <div class="service-card">
+        <div class="card-top">
+          <div class="card-tag-row">
+            <img src="images/icone-suivi.png" alt="" aria-hidden="true" class="card-icon">
+          </div>
+          <h3>Suivi énergétique</h3>
+          <p class="price">60 Mins • 50€</p>
+          <p class="desc">Une séance réparatrice centrée sur votre demande. Par exemple : douleurs, maladies, fatigue, épuisement, insomnie, burn-out, deuil, stress, convalescence, dépression, Troubles Obsessionnels Compulsifs (TOC)...</p>
+        </div>
+        <a href="#booking" class="btn btn-primary btn-block" data-cal="15min">Choisir ce soin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking-calendar" id="booking">
+    <div class="section-header light">
+      <p class="eyebrow">Réservez votre séance</p>
+      <h2>Choisissez un créneau qui vous convient</h2>
+    </div>
+
+    <div class="cal-widget-container" id="cal-booking-root"></div>
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", {origin:"https://app.cal.com"});
+      Cal("init", "15min", {origin:"https://app.cal.com"});
+      window.calCalLinks = { "30min": "momentdegrace/30min", "15min": "momentdegrace/15min" };
+    </script>
+    <script type="text/babel">
+      const { useState, useEffect, useRef } = React;
+
+      const CALS = ['30min', '15min'];
+
+      function BookingWidget() {
+        const [active, setActive] = useState(null);
+        const initialized = useRef({});
+
+        useEffect(() => {
+          window.selectCalendar = (cal) => setActive(cal);
+          return () => { delete window.selectCalendar; };
+        }, []);
+
+        useEffect(() => {
+          if (!active || !window.Cal) return;
+          if (initialized.current[active]) return;
+          initialized.current[active] = true;
+          requestAnimationFrame(() => {
+            Cal.ns[active]('inline', {
+              elementOrSelector: '#my-cal-inline-' + active,
+              config: { layout: 'month_view', useSlotsViewOnSmallScreen: 'true' },
+              calLink: window.calCalLinks[active],
+            });
+            Cal.ns[active]('ui', {
+              hideEventTypeDetails: false,
+              layout: 'month_view',
+              theme: 'light',
+              cssVarsPerTheme: {
+                light: {
+                  /* Brand — sélection date, bouton Confirmer */
+                  'cal-brand':           '#ffd700',
+                  'cal-brand-emphasis':  '#e6c200',
+                  'cal-brand-text':      '#2e1c40',
+                  'cal-brand-subtle':    '#faf6ec',
+                  /* Texte */
+                  'cal-text':            '#2e1c40',
+                  'cal-text-emphasis':   '#2e1c40',
+                  'cal-text-subtle':     '#5f4b78',
+                  'cal-text-muted':      '#5f4b78',
+                  /* Fonds */
+                  'cal-bg':              '#ffffff',
+                  'cal-bg-emphasis':     '#f5f3fa',
+                  'cal-bg-subtle':       '#f5f3fa',
+                  'cal-bg-muted':        '#faf6ec',
+                  /* Bordures */
+                  'cal-border':          '#d8b4e2',
+                  'cal-border-emphasis': '#b57edc',
+                  'cal-border-subtle':   '#f5f3fa',
+                  'cal-border-booker':   'transparent',
+                  /* Layout */
+                  'radius':              '12px',
+                },
+              },
+            });
+          });
+        }, [active]);
+
+        return (
+          <>
+            {!active && (
+              <div className="cal-blank-state">
+                <p>Veuillez d'abord sélectionner votre soin ci-dessus.</p>
+              </div>
+            )}
+            {CALS.map(cal => (
+              <div
+                key={cal}
+                style={{ display: active === cal ? 'block' : 'none' }}
+              >
+                <div
+                  id={'my-cal-inline-' + cal}
+                  style={{ width: '100%' }}
+                />
+              </div>
+            ))}
+          </>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById('cal-booking-root'));
+      root.render(<BookingWidget />);
+    </script>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <p class="eyebrow">Témoignages</p>
+      <h2>Des histoires de transformation et de guérison.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial-card">
+        <p>« Merci beaucoup Fabienne pour tes soins en énergie Reiki. Cet hiver, en une séance, <strong>tu m'as libérée de la grippe suite au Covid</strong>, et aujourd'hui, après une autre séance sur mes genoux très usés, <strong>j'ai réussi à marcher 5 km en forêt sans prendre d'antalgiques</strong> ce qui est très important pour moi. Le confort de vie que tu m'apportes est sans égal, encore merci ! »</p>
+        <footer>
+          <span class="avatar">ML</span>
+          <div><strong>Marie-Claire L.</strong><small>Cliente vérifiée • 6 séances</small></div>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card">
+        <p>« J'étais honnêtement très sceptique sur le soin énergétique à distance. Pourtant, pendant notre séance, j'ai ressenti une chaleur douce et apaisante descendre le long de mon épaule et de ma nuque. Le soulagement était indéniable. »</p>
+        <footer>
+          <span class="avatar">MD</span>
+          <div><strong>Marie Dupont</strong><small>Cliente vérifiée • Reiki à distance</small></div>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card">
+        <p>« Son approche clinique apporte une rigueur nouvelle au travail énergétique. Elle a exploré mes blocages avec une précision remarquable. Je la recommande vivement à tous ceux qui cherchent un véritable allègement physique et mental. »</p>
+        <footer>
+          <span class="avatar">SL</span>
+          <div><strong>Sophie Lemaire</strong><small>Cliente vérifiée • Harmonisation mensuelle</small></div>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2>Vos questions, nos réponses.</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-col">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Comment fonctionne un soin énergétique à distance ?</span>
+            <span class="chevron" aria-hidden="true"><svg width="10" height="5" viewBox="-1 -1 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <p>L'énergie ne connaît pas la distance. De la même façon qu'un signal téléphone ou Wi-Fi traverse l'espace, la connexion énergétique s'établit parfaitement de chez vous. Lors de la séance, nous échangeons d'abord par téléphone (ou visioconférence), puis vous vous installez confortablement chez vous pendant que j'effectue le travail d'harmonisation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>De quoi ai-je besoin chez moi pour la séance ?</span>
+            <span class="chevron" aria-hidden="true"><svg width="10" height="5" viewBox="-1 -1 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <div>
+              <p>De très peu de choses ! Simplement :</p>
+              <p>Un endroit calme où vous ne serez pas dérangé·e pendant environ 1h.</p>
+              <p>Un lit, un canapé ou un fauteuil confortable.</p>
+              <p>Un téléphone (ou un ordinateur) avec connexion Internet.</p>
+              <p>Une couverture ou un plaid (le corps a tendance à se refroidir en état de relaxation profonde).</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Est-ce aussi efficace qu'une séance en cabinet ?</span>
+            <span class="chevron" aria-hidden="true"><svg width="10" height="5" viewBox="-1 -1 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolument. Et pour beaucoup, c'est même plus efficace ! Être dans son propre cocon, sans la fatigue du trajet retour ou le stress de la route, permet d'intégrer le soin dans un état de détente maximale et prolongée.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-col">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Je ne suis pas très à l'aise avec la technologie, est-ce un problème ?</span>
+            <span class="chevron" aria-hidden="true"><svg width="10" height="5" viewBox="-1 -1 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <p>Pas du tout. Si vous n'êtes pas à l'aise avec les liens vidéo (Zoom/WhatsApp), un simple coup de téléphone suffit. Je vous appelle au début de la séance pour faire le point, puis nous raccrochons le temps du soin si vous préférez. Je m'adapte entièrement à ce qui est le plus simple pour vous.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Que vais-je ressentir pendant la séance ?</span>
+            <span class="chevron" aria-hidden="true"><svg width="10" height="5" viewBox="-1 -1 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <p>Les sensations varient selon les personnes et les moments : une grande vague de détente, des picotements doux, une sensation de chaleur, libération d'émotions, apaisement, émergence de solution, clarification du mental ou tout simplement un profond sommeil réparateur. Même si vous ne ressentez rien de particulier sur le moment, le travail énergétique agit en profondeur pendant 2 à 3 jours.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Comment se passe le paiement ?</span>
+            <span class="chevron" aria-hidden="true"><svg width="10" height="5" viewBox="-1 -1 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            <p>Le paiement s'effectue en ligne de manière 100 % sécurisée lors de la réservation (par carte bancaire). Si vous rencontrez la moindre difficulté, vous pouvez me contacter directement pour trouver une solution adaptée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING CTA -->
+  <section class="booking-cta">
+    <p class="eyebrow center">faites le premier pas</p>
+    <h2>Offrez à votre âme la clarté radieuse qu'elle mérite.</h2>
+    <p class="cta-subtitle">Pas besoin de vous déplacer. Réservez votre séance à distance en quelques clics et commencez votre chemin vers un mieux-être durable.</p>
+    <div class="cta-action-group">
+      <a href="#booking" class="btn btn-primary">Prendre Rendez-vous</a>
+      <a href="#footer" class="btn btn-secondary">Me contacter</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-columns">
+    <div class="brand-column">
+      <div class="brand-logo">
+        <span class="logo-badge dark">✨</span>
+        <span class="logo-text light">Moment de Grâce</span>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Horaires</h3>
+      <p>Lundi – Jeudi : 9h00 – 18h00</p>
+      <p>Vendredi : 9h00 – 16h00</p>
+      <p>Samedi : 10h00 – 14h00 (à distance uniquement)</p>
+      <p>Dimanche : Fermé</p>
+    </div>
+    <div class="footer-column">
+      <h3>Certifications</h3>
+      <p>Pratique rigoureuse selon les principes de la médecine somatique. Certifiée et assurée par l'Association Internationale des Professionnels du Reiki (IARP).</p>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <p class="disclaimer">Les soins énergétiques, le Reiki et les thérapies biofield sont des approches complémentaires et alternatives qui ne remplacent pas un avis médical, un diagnostic ou une prise en charge par un professionnel de santé. Merci de coordonner ces soins avec votre médecin traitant.</p>
+    <div class="copyright-row">
+      <p>© 2026 Moment de Grâce. Tous droits réservés.</p>
+      <div class="legal-links">
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
