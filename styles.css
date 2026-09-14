@@ -89,6 +89,17 @@ section {
   max-width: 700px;
   margin: 0 auto 48px;
 }
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  width: 34px;
+  height: 3px;
+  background: var(--yellow);
+  border-radius: var(--radius-pill);
+}
 .section-header.light .eyebrow, .section-header.light h2 { color: var(--white); }
 .section-subtitle { font-size: 16px; }
 
