@@ -99,7 +99,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 8px 80px;
   background: var(--white);
   border-bottom: 1px solid var(--lavender-light);
   position: sticky;
