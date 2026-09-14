@@ -121,10 +121,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  document.getElementById('contactForm').addEventListener('submit', (e) => {
+  document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('contactSuccess').classList.add('visible');
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours…';
+
+    try {
+      const res = await fetch('https://formspree.io/f/xjyvqnqn', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('contactSuccess').classList.add('visible');
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Envoyer mon message';
+        alert('Une erreur est survenue. Veuillez réessayer.');
+      }
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Envoyer mon message';
+      alert('Une erreur est survenue. Veuillez réessayer.');
+    }
   });
 });
 </script>
