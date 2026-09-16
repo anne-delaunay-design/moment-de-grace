@@ -177,6 +177,7 @@ section {
 hr { border: none; border-top: 1px solid var(--lavender-light); margin: 32px 0; }
 .modalities-row { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
 .modalities-label { font-weight: 700; font-size: 12px; text-transform: uppercase; }
+.modalities-break { display: none; }
 .modality-badge {
   background: var(--white);
   border: 1px solid var(--lavender-light);
@@ -470,8 +471,12 @@ footer hr { border-top: 1px solid rgba(255,255,255,0.15); }
   .nav-links a:last-child { border-bottom: none; }
   .hero, .about { flex-direction: column; }
   .hero-image { width: calc(100% - 16px); max-width: 100%; height: 300px; border-radius: 16px; border-top-left-radius: 100px; margin: 0 8px; background-image: url('images/hero-image-mobile.png'); }
-  .about-image { width: 100%; max-width: 100%; height: 360px; border-radius: 16px; }
+  .about-image { width: 100%; max-width: 100%; height: 360px; border-radius: 16px; background-size: 105% auto; background-position: center; }
   .stats-row { flex-direction: column; gap: 24px; align-items: flex-start; width: fit-content; margin: 0 auto; }
+  .trust-bar { padding-left: 24px; padding-right: 24px; }
+  .modalities-row { flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }
+  .modalities-label { font-size: 13px; flex: 0 0 100%; text-align: center; }
+  .modalities-break { display: none; }
   .main-content { flex-direction: column; }
   .left-column { width: 100%; }
   h1 { font-size: 34px; }
