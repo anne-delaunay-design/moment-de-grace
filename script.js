@@ -5,8 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      navLinks.style.display = navLinks.classList.contains('open') ? 'flex' : 'none';
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.textContent = isOpen ? '✕' : '☰';
+      navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.textContent = '☰';
+        navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+      });
     });
   }
 
@@ -37,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
       }
     });
   });

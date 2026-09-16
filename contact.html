@@ -21,6 +21,7 @@
     <a href="index.html#about">À propos</a>
     <a href="index.html#services">Services</a>
     <a href="index.html#testimonials">Avis</a>
+    <a href="index.html#faq">FAQ</a>
     <a href="contact.html" class="nav-active">Contact</a>
   </nav>
   <a href="index.html#services" class="btn btn-primary">Prendre rendez-vous</a>
@@ -115,8 +116,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      navLinks.style.display = navLinks.classList.contains('open') ? 'flex' : 'none';
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.textContent = isOpen ? '✕' : '☰';
+      navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.textContent = '☰';
+        navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+      });
     });
   }
 
