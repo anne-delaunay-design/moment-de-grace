@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mentions légales — Moment de Grâce</title>
-<meta name="description" content="Mentions légales du site Moment de Grâce — éditeur, hébergement, activité et avertissement.">
+<title>Politique de confidentialité — Moment de Grâce</title>
+<meta name="description" content="Politique de confidentialité du site Moment de Grâce — données collectées, droits RGPD et sous-traitants.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
@@ -40,6 +40,34 @@
   .legal-section p strong {
     color: var(--plum);
   }
+  .legal-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .legal-list li {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-muted);
+    padding-left: 20px;
+    position: relative;
+  }
+  .legal-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--lavender);
+  }
+  .legal-list li strong {
+    color: var(--plum);
+  }
   @media (max-width: 900px) {
     .legal-page { padding: 60px 24px; }
     .legal-page h1 { font-size: 28px; margin-bottom: 36px; }
@@ -66,31 +94,42 @@
 <main>
   <section style="background: var(--bg-lavender); padding: 0;">
     <div class="legal-page">
-      <p class="eyebrow" style="margin-bottom: 16px;">Informations légales</p>
-      <h1>Mentions légales</h1>
+      <p class="eyebrow" style="margin-bottom: 16px;">Données personnelles</p>
+      <h1>Politique de confidentialité</h1>
 
       <div class="legal-section">
-        <h2>1. Éditeur du site</h2>
-        <p>Le site <strong>momentsdegrace.fr</strong> est édité par :</p>
-        <p><strong>Fabienne CORDEL</strong>, opérant sous le statut d'Entrepreneur Individuel (Micro-entreprise).</p>
-        <p><strong>Adresse :</strong> 42 rue du Haingoin, 88350 Liffol-le-Grand</p>
-        <p><strong>Numéro SIRET :</strong> 99962258200016</p>
-        <p><strong>Email :</strong> <a href="mailto:fabienne.cordel@yahoo.fr" style="color: var(--lavender); font-weight: 600;">fabienne.cordel@yahoo.fr</a></p>
-        <p><strong>Directeur de la publication :</strong> Fabienne CORDEL</p>
+        <h2>1. Responsable du traitement des données</h2>
+        <p>Les données personnelles collectées sur le site GoDaddy Operating Company, LLC sont traitées par <strong>Fabienne CORDEL</strong> (<a href="mailto:fabienne.cordel@yahoo.fr" style="color: var(--lavender); font-weight: 600;">fabienne.cordel@yahoo.fr</a>).</p>
       </div>
 
       <div class="legal-section">
-        <h2>2. Hébergement du site</h2>
-        <p>Le site est hébergé par :</p>
-        <p><strong>GoDaddy Operating Company, LLC</strong></p>
-        <p>2155 E. GoDaddy Way, Tempe, AZ 85284, États-Unis</p>
-        <p><strong>Téléphone :</strong> +33 09 75 18 70 39</p>
-        <p><strong>Site web :</strong> <a href="https://www.godaddy.com" target="_blank" rel="noopener noreferrer" style="color: var(--lavender); font-weight: 600;">godaddy.com</a></p>
+        <h2>2. Données collectées et finalités</h2>
+        <p>Dans le cadre de la prise de rendez-vous et de l'exécution des prestations, nous collectons les données suivantes :</p>
+        <ul class="legal-list">
+          <li><strong>Prénom, Nom, Adresse email et Téléphone :</strong> Nécessaires à la prise de rendez-vous, la confirmation de séance et la prise de contact préalable.</li>
+          <li><strong>Données de paiement :</strong> Requis pour le règlement des séances en ligne.</li>
+        </ul>
       </div>
 
       <div class="legal-section">
-        <h2>3. Activité &amp; Avertissement</h2>
-        <p>Les prestations de soins énergétiques et Reiki proposées sur ce site s'inscrivent dans une démarche de bien-être et de relaxation. Elles ne constituent en aucun cas des actes médicaux, des diagnostics ou des traitements psychologiques, et ne se substituent aucunement à un suivi ou traitement médical réalisé par un professionnel de santé habilité.</p>
+        <h2>3. Outils tiers et sous-traitants</h2>
+        <p>Pour assurer le bon fonctionnement du service, nous faisons appel à des prestataires certifiés conformes au RGPD :</p>
+        <ul class="legal-list">
+          <li><strong>Prise de rendez-vous :</strong> Cal.com (gestion des créneaux et agendas).</li>
+          <li><strong>Traitement des paiements :</strong> Stripe (gestion sécurisée des transactions bancaires). Aucune donnée bancaire (numéro de carte) n'est stockée sur le site.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2>4. Durée de conservation des données</h2>
+        <p>Les données nécessaires à la gestion des rendez-vous et des factures sont conservées pendant la durée légale en vigueur (jusqu'à 3 ans après le dernier contact pour la relation client, 10 ans pour les pièces comptables).</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>5. Vos droits (RGPD)</h2>
+        <p>Conformément au Règlement Général sur la Protection des Données, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données personnelles.</p>
+        <p>Pour exercer ce droit, vous pouvez nous contacter par email à : <a href="mailto:fabienne.cordel@yahoo.fr" style="color: var(--lavender); font-weight: 600;">fabienne.cordel@yahoo.fr</a>.</p>
+        <p>Vous disposez également du droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style="color: var(--lavender); font-weight: 600;">CNIL (cnil.fr)</a>.</p>
       </div>
     </div>
   </section>
