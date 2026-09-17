@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Année footer ---
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
   // --- Smooth scroll pour les autres ancres ---
   document.querySelectorAll('a[href^="#"]:not([data-cal])').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
